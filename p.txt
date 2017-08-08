@@ -1,26 +1,26 @@
-ÈçºÎ»ñÈ¡µ±Ç°Ê±¼äµ±ÔÂµÄ×îºóÒ»Ìì£¿  new Date(new Date(new Date().getFullYear(),new Date().getMonth(),1).getTime()-1000*60*60*24).getDate()           getYear()·½·¨£¬ÓĞµÄä¯ÀÀÆ÷·µ»Ø ¾à1900.1.1µÄÄê·İ
+å¦‚ä½•è·å–å½“å‰æ—¶é—´å½“æœˆçš„æœ€åä¸€å¤©ï¼Ÿ  new Date(new Date(new Date().getFullYear(),new Date().getMonth(),1).getTime()-1000*60*60*24).getDate()           getYear()æ–¹æ³•ï¼Œæœ‰çš„æµè§ˆå™¨è¿”å› è·1900.1.1çš„å¹´ä»½
 
 
-Array ÓÃµ½ÄÄĞ©·½·¨ºÍÊôĞÔ£¿ protootype length concat() join() pop() push() reverse() shift() slice() sort() splice() toString() toLocaleString() 
+Array ç”¨åˆ°å“ªäº›æ–¹æ³•å’Œå±æ€§ï¼Ÿ protootype length concat() join() pop() push() reverse() shift() slice() sort() splice() toString() toLocaleString() 
 
 
-¿çÓò jsonP    <script>   function getWeather(data) {     console.log(data);  }</script>
+è·¨åŸŸ jsonP    <script>   function getWeather(data) {     console.log(data);  }</script>
 
-              <script src="http://x.y.com/xx.js"> ( getWeather({    "³ÇÊĞ": "±±¾©",    "ÌìÆø": "´óÎí"}); )
+              <script src="http://x.y.com/xx.js"> ( getWeather({    "åŸå¸‚": "åŒ—äº¬",    "å¤©æ°”": "å¤§é›¾"}); )
 
-±Õ°ü ÓĞÈ¨·ÃÎÊÁíÒ»¸öº¯Êı×÷ÓÃÓòÄÚ±äÁ¿µÄº¯Êı¶¼ÊÇ±Õ°ü¡£
-
-
-
-½ûÖ¹ iPhone Safari video±êÇ©ÊÓÆµ×Ô¶¯È«ÆÁ
+é—­åŒ… æœ‰æƒè®¿é—®å¦ä¸€ä¸ªå‡½æ•°ä½œç”¨åŸŸå†…å˜é‡çš„å‡½æ•°éƒ½æ˜¯é—­åŒ…ã€‚
 
 
-Æ»¹ûscroll  -webkit-overflow-scrolling: touch;
 
-<script src="https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/2.5.1/vconsole.min.js"></script> Î¢ĞÅÖĞ¿´console
+ç¦æ­¢ iPhone Safari videoæ ‡ç­¾è§†é¢‘è‡ªåŠ¨å…¨å±
 
 
-½ûÖ¹iosÒ³Ãæµ¯ĞÔ»¬¶¯
+è‹¹æœscroll  -webkit-overflow-scrolling: touch;
+
+<script src="https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/2.5.1/vconsole.min.js"></script> å¾®ä¿¡ä¸­çœ‹console
+
+
+ç¦æ­¢iosé¡µé¢å¼¹æ€§æ»‘åŠ¨
 document.addEventListener('touchmove',function(e){
 	if(!e._isScroller){
 		e.preventDefault();
@@ -29,21 +29,21 @@ document.addEventListener('touchmove',function(e){
 })
 
 
-×¢Òâ£¬»ñÈ¡urlµÄÊ±ºò£¬±ØĞëencodeÒ»ÏÂ£¬Î¢ĞÅÄÚ´ò¿ªµÄÊ±ºò£¬Î¢ĞÅ»¹»á¼ÓÉÏ¶îÍâµÄ²ÎÊıÉÏÈ¥
+æ³¨æ„ï¼Œè·å–urlçš„æ—¶å€™ï¼Œå¿…é¡»encodeä¸€ä¸‹ï¼Œå¾®ä¿¡å†…æ‰“å¼€çš„æ—¶å€™ï¼Œå¾®ä¿¡è¿˜ä¼šåŠ ä¸Šé¢å¤–çš„å‚æ•°ä¸Šå»
 
-iframe È¥µô»¬¶¯  Ö±½Ó¼ÓÊôĞÔscrolling="no"
+iframe å»æ‰æ»‘åŠ¨  ç›´æ¥åŠ å±æ€§scrolling="no"
 
-video ²¥·ÅÊÓÆµÈ«ÆÁµÄ¿Ó£¨Ã»ÓĞÍêÃÀµÄ°ì·¨£©£¬appÄÚÊÓÆÁÄ¬ÈÏ²»È«ÆÁ£¬Obj-CÖĞ£¬Ìí¼ÓÅäÖÃ£ºwebview.allowsInlineMediaPlayback = YES;
+video æ’­æ”¾è§†é¢‘å…¨å±çš„å‘ï¼ˆæ²¡æœ‰å®Œç¾çš„åŠæ³•ï¼‰ï¼Œappå†…è§†å±é»˜è®¤ä¸å…¨å±ï¼ŒObj-Cä¸­ï¼Œæ·»åŠ é…ç½®ï¼šwebview.allowsInlineMediaPlayback = YES;
 
-window.navigator.userAgent.toLowerCase().indexOf("micromessenger")  ÊÇ·ñÊÇÎ¢ĞÅä¯ÀÀÆ÷
+window.navigator.userAgent.toLowerCase().indexOf("micromessenger")  æ˜¯å¦æ˜¯å¾®ä¿¡æµè§ˆå™¨
 
-WeixinJSBridge.call('closeWindow'); Î¢ĞÅÖĞ¹Ø±Õä¯ÀÀ´°¿Ú
+WeixinJSBridge.call('closeWindow'); å¾®ä¿¡ä¸­å…³é—­æµè§ˆçª—å£
 
-object-fit£¨fill|cover|contain|none|scale-down£©      The object-fit CSS property specifies how a replaced element, such as an <img> or <video>, should be resized to fit its container.
+object-fitï¼ˆfill|cover|contain|none|scale-downï¼‰      The object-fit CSS property specifies how a replaced element, such as an <img> or <video>, should be resized to fit its container.
 
-history.pushState() ·½·¨Ïòä¯ÀÀÆ÷ÀúÊ·Ìí¼ÓÁËÒ»¸ö×´Ì¬
+history.pushState() æ–¹æ³•å‘æµè§ˆå™¨å†å²æ·»åŠ äº†ä¸€ä¸ªçŠ¶æ€
 
-//»Øµ¯Ò³Ãæ
+//å›å¼¹é¡µé¢
 $(function(){  
           pushHistory();  
           var bool=true;  
@@ -63,3 +63,8 @@ $(function(){
             };  
             window.history.pushState(state, "title", location.href);  
       }
+      
+      
+      
+      
+      
