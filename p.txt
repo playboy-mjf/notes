@@ -1,0 +1,65 @@
+如何获取当前时间当月的最后一天？  new Date(new Date(new Date().getFullYear(),new Date().getMonth(),1).getTime()-1000*60*60*24).getDate()           getYear()方法，有的浏览器返回 距1900.1.1的年份
+
+
+Array 用到哪些方法和属性？ protootype length concat() join() pop() push() reverse() shift() slice() sort() splice() toString() toLocaleString() 
+
+
+跨域 jsonP    <script>   function getWeather(data) {     console.log(data);  }</script>
+
+              <script src="http://x.y.com/xx.js"> ( getWeather({    "城市": "北京",    "天气": "大雾"}); )
+
+闭包 有权访问另一个函数作用域内变量的函数都是闭包。
+
+
+
+禁止 iPhone Safari video标签视频自动全屏
+
+
+苹果scroll  -webkit-overflow-scrolling: touch;
+
+<script src="https://res.wx.qq.com/mmbizwap/zh_CN/htmledition/js/vconsole/2.5.1/vconsole.min.js"></script> 微信中看console
+
+
+禁止ios页面弹性滑动
+document.addEventListener('touchmove',function(e){
+	if(!e._isScroller){
+		e.preventDefault();
+}
+
+})
+
+
+注意，获取url的时候，必须encode一下，微信内打开的时候，微信还会加上额外的参数上去
+
+iframe 去掉滑动  直接加属性scrolling="no"
+
+video 播放视频全屏的坑（没有完美的办法），app内视屏默认不全屏，Obj-C中，添加配置：webview.allowsInlineMediaPlayback = YES;
+
+window.navigator.userAgent.toLowerCase().indexOf("micromessenger")  是否是微信浏览器
+
+WeixinJSBridge.call('closeWindow'); 微信中关闭浏览窗口
+
+object-fit（fill|cover|contain|none|scale-down）      The object-fit CSS property specifies how a replaced element, such as an <img> or <video>, should be resized to fit its container.
+
+history.pushState() 方法向浏览器历史添加了一个状态
+
+//回弹页面
+$(function(){  
+          pushHistory();  
+          var bool=true;  
+          window.addEventListener("popstate", function(e) {  
+            if(bool)  
+              {   
+                  location.href='/back/tkj?t=2017070';
+              }  
+              pushHistory();  
+                    
+          }, false);  
+      });  
+      function pushHistory() {  
+            var state = {  
+                title: "title",  
+                url: "#"  
+            };  
+            window.history.pushState(state, "title", location.href);  
+      }
