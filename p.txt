@@ -1,3 +1,8 @@
+性能优化 微观网络（web server（包含你说的gzip这类东西）、cdn、http强弱缓存、http2、跨域预请求的优化）、
+         宏观网络（负载均衡、智能dns、webserver分发，数据库连接池分发）
+         程序（算法、设计模式的优化，比如事件代理这样的鬼东西）
+         资源（图片格式的使用及base64，css的分包或不分包处理、脚本的模块化处理、字体媒体等其他资源的压缩和生成）、
+
 如何获取当前时间当月的最后一天？  new Date(new Date(new Date().getFullYear(),new Date().getMonth(),1).getTime()-1000*60*60*24).getDate()           getYear()方法，有的浏览器返回 距1900.1.1的年份
 
 
