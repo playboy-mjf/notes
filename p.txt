@@ -70,7 +70,7 @@ $(function(){
             window.history.pushState(state, "title", location.href);  
       }
       
-      
-      
+      页面可见性  document.hidden    pageHide事件，visibilitychange事件）（http://blog.csdn.net/sunhengzhe/article/details/46844137）
+      
       
       
