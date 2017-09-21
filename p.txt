@@ -71,6 +71,23 @@ $(function(){
       }
       
       页面可见性  document.hidden    pageHide事件，visibilitychange事件）（http://blog.csdn.net/sunhengzhe/article/details/46844137）
+      
+    function getCookie(name){
+      //document.cookie获取当前网站的所有cookie
+      var arr=document.cookie.split('; ');
+      for(var i=0;i<arr.length;i++){
+	var arr1=arr[i].split('=');
+	if(arr1[0]==name){
+	  return arr1[1];
+	}
+      }
+      return '';
+    }
+    function setCookie(name,value,myDay){
+      var oDate=new Date();
+      oDate.setDate(oDate.getDate()+myDay);
+      document.cookie=name+'='+value+'; expires='+oDate;
+    }
       
       
       
