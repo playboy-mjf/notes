@@ -89,5 +89,30 @@ $(function(){
       document.cookie=name+'='+value+'; expires='+oDate;
     }
       
-      
-      
+//原生ajax
+function GetXmlHttpObject() {
+    if (window.XMLHttpRequest) {
+	xmlhttp = new XMLHttpRequest()
+    } else {
+	xmlhttp = new ActiveXObject("Microsoft.XMLHTTP")
+    }
+    return xmlhttp
+}
+
+function getLabelsGet(idname) {
+    console.log('18'+idname)
+    xmlHttp = GetXmlHttpObject();
+    if (xmlHttp == null) {
+	alert('重试！');
+	return
+    }
+    var url = "http://account.crm.shanzhuan168.com/common/bbzn?position_id=30&platform=bbzn&adsense=10&r=" + Math.random();
+    xmlHttp.open("GET", url, false);
+    xmlHttp.onreadystatechange = function() {
+	if (xmlHttp.readyState == 4 && xmlHttp.status == 200 || xmlHttp.status == 304) {
+	    console.log('19'+idname)
+	    getHtml(xmlHttp.responseText,idname)
+	}
+    };
+    xmlHttp.send()
+}
