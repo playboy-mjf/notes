@@ -116,3 +116,8 @@ function getLabelsGet(idname) {
     };
     xmlHttp.send()
 }
+
+
+
+//  VS code vue组件红色波浪线解决方案
+vetur.validation.template = false
