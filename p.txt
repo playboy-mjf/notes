@@ -121,3 +121,13 @@ function getLabelsGet(idname) {
 
 //  VS code vue组件红色波浪线解决方案
 vetur.validation.template = false
+
+
+//矩形重叠面积 over_width*over_height
+startx = min(x1, x2);  endx = max(x1+width1, x2+width2);   
+over_width = width1 + width2 - (endx - startx);  
+starty = min(y1, y2);  endy = max(y1 + height1, y2 + height2);   
+over_height = height1+height2-(endy-starty);  
+
+
+
