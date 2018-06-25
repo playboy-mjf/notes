@@ -129,5 +129,7 @@ over_width = width1 + width2 - (endx - startx);
 starty = min(y1, y2);  endy = max(y1 + height1, y2 + height2);   
 over_height = height1+height2-(endy-starty);  
 
+配置hosts文件报错：devServer=》添加 disableHostCheck: true
+
 
 
